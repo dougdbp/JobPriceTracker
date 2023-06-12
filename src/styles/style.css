@@ -8,3 +8,13 @@
 body {
     background: #1C1B1E;
 }
+
+main{
+    position: absolute;
+    width: 34rem;
+    height: 45.2rem;
+    left: 51.3rem;
+    top: 19.4rem;
+}
+
+form {}
