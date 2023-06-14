@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <script>
+        // Get the PDF data from the query parameter
+        var pdfData = decodeURIComponent(window.location.search.substring(1));
+
+        // Parse the JSON data
+        var jsonData = JSON.parse(pdfData);
+
+        // Display the JSON data in the page
+        var jsonDataStr = JSON.stringify(jsonData, null, 2);
+        document.body.innerHTML = "<pre>" + jsonDataStr + "</pre>";
+    </script>
+</body>
+</html>
